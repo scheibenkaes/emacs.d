@@ -5,5 +5,11 @@ Zeile rauf C-p
 
 Zeile runter C-n
 
-Nächstes Wort
+Nächstes Wort: M-f
+Vorheriges Wort: M-b
 
+
+Löschen:
+
+Wort nach Cursor: M-d
+Wort vor Cursor: 

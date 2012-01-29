@@ -19,5 +19,6 @@
      ; (global-set-key "\M-n" '(lambda () (interactive) (insert "~")))
       (setq mac-command-modifier 'meta)
       (setq mac-option-modifier nil)
-      
       ))
+
+(global-linum-mode 1)
