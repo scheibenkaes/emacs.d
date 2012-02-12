@@ -11,3 +11,4 @@
       (setq mac-command-modifier 'meta)
       (setq mac-option-modifier nil)))
 
+(setq ispell-program-name "aspell")
