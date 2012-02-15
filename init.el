@@ -22,10 +22,11 @@
   (package-refresh-contents))
 
 (defvar my-packages '(starter-kit
+                      starter-kit-eshell
                       starter-kit-bindings
                       starter-kit-lisp
                       undo-tree
-                      yasnippets
+                      yasnippet
                       yasnippet-bundle))
 
 (dolist (p my-packages)
