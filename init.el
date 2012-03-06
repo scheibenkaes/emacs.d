@@ -35,3 +35,13 @@
 
 ;; modes
 (undo-tree-mode 1)
+
+;; org mode
+
+(setq org-directory "~/org")
+(setq org-mobile-directory "~/Dropbox/MobileOrg")
+(setq org-mobile-inbox-for-pull "~/org/flagged.org")
+
+
+
+
