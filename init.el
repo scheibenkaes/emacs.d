@@ -34,7 +34,7 @@
     (package-install p)))
 
 ;; modes
-(undo-tree-mode 1)
+(global-undo-tree-mode 1)
 
 ;; org mode
 
