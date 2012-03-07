@@ -26,6 +26,7 @@
                       starter-kit-bindings
                       starter-kit-lisp
                       undo-tree
+                      js2-mode
                       yasnippet
                       yasnippet-bundle))
 
