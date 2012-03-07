@@ -27,6 +27,7 @@
                       starter-kit-lisp
                       undo-tree
                       js2-mode
+                      clojure-mode
                       yasnippet
                       yasnippet-bundle))
 
