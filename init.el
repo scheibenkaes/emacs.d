@@ -44,6 +44,13 @@
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 
+;; auto complete
+;; http://www.emacswiki.org/emacs/AutoComplete
+;; Installation: http://cx4a.org/software/auto-complete/manual.html#Installation
+(add-to-list 'load-path "~/.emacs.d/ac/")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac/ac-dict")
+(ac-config-default)
 
 
 
