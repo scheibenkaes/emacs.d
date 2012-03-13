@@ -65,3 +65,5 @@
 ;; rainbow-delimiters
 (global-rainbow-delimiters-mode 1)
 
+(add-hook 'slime-repl-mode-hook 'paredit-mode)
+
