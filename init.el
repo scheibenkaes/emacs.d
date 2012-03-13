@@ -29,6 +29,7 @@
                       js2-mode
                       clojure-mode
                       ac-slime          
+                      rainbow-delimiters
                       yasnippet
                       yasnippet-bundle))
 
@@ -60,3 +61,7 @@
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 (eval-after-load "auto-complete"
   '(add-to-list 'ac-modes 'slime-repl-mode))
+
+;; rainbow-delimiters
+(global-rainbow-delimiters-mode 1)
+
