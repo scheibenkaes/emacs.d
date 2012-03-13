@@ -28,6 +28,7 @@
                       undo-tree
                       js2-mode
                       clojure-mode
+                      ac-slime          
                       yasnippet
                       yasnippet-bundle))
 
@@ -52,5 +53,10 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac/ac-dict")
 (ac-config-default)
 
+;; ac-slime
 
-
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+(eval-after-load "auto-complete"
+  '(add-to-list 'ac-modes 'slime-repl-mode))
