@@ -29,6 +29,7 @@
                       js2-mode
                       clojure-mode
                       ac-slime          
+;                      slime-fuzzy
                       rainbow-delimiters
                       yasnippet
                       yasnippet-bundle))
@@ -67,3 +68,19 @@
 
 (add-hook 'slime-repl-mode-hook 'paredit-mode)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("d14db41612953d22506af16ef7a23c4d112150e5" default))))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(when (package-installed-p 'color-theme-sanityinc-solarized)
+  (load-theme 'sanityinc-solarized-dark))
