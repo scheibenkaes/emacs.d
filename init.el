@@ -84,3 +84,15 @@
 
 (when (package-installed-p 'color-theme-sanityinc-solarized)
   (load-theme 'sanityinc-solarized-dark))
+
+(defun b6n-on-mark-activated ()
+  (setq cursor-type 'bar))
+
+(defun b6n-on-mark-deactivated ()
+  (setq cursor-type 'box))
+
+(add-hook 'activate-mark-hook 'b6n-on-mark-activated)
+
+(add-hook 'deactivate-mark-hook 'b6n-on-mark-deactivated)
+
+
