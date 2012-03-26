@@ -1,3 +1,7 @@
+* Whitespace
+** just-one-space
+** C-S backspace
+** delete-trailing-whitespace
 
 * Cursor
 
