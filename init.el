@@ -47,6 +47,8 @@
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 
+(add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "german8")))
+
 ;; auto complete
 ;; http://www.emacswiki.org/emacs/AutoComplete
 ;; Installation: http://cx4a.org/software/auto-complete/manual.html#Installation
