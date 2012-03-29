@@ -97,4 +97,7 @@
 
 (add-hook 'deactivate-mark-hook 'b6n-on-mark-deactivated)
 
+;; windows
+(when (eq system-type 'windows-nt)
+  (setq null-device "/dev/null"))
 
