@@ -41,6 +41,12 @@
 ;; modes
 (global-undo-tree-mode 1)
 
+;; yas
+
+(setq yas/root-directory "~/.emacs.d/yas-snippets")
+
+(yas/load-directory yas/root-directory)
+
 ;; org mode
 
 (setq org-directory "~/org")
