@@ -12,6 +12,9 @@
 ;; Keyboard and Unicode stuff
 (set-keyboard-coding-system 'iso-latin-1)
 
+;; Custom lisp code
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
 ;; packages
 (require 'package)
 (add-to-list 'package-archives
@@ -27,7 +30,6 @@
                       starter-kit-bindings
                       starter-kit-lisp
                       undo-tree
-                      js2-mode
                       clojure-mode
                       ac-slime          
 ;                      slime-fuzzy
