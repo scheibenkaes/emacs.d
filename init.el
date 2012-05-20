@@ -82,7 +82,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("d14db41612953d22506af16ef7a23c4d112150e5" default))))
+ '(custom-safe-themes (quote ("7fe1e3de3e04afc43f9a3d3a8d38cd0a0efd9d4c" "d14db41612953d22506af16ef7a23c4d112150e5" default))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -92,7 +92,7 @@
  )
 
 (when (package-installed-p 'color-theme-sanityinc-solarized)
-  (load-theme 'sanityinc-solarized-dark))
+  (load-theme 'sanityinc-solarized-light))
 
 (defun b6n-on-mark-activated ()
   (setq cursor-type 'bar))
