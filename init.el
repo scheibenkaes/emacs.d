@@ -15,6 +15,11 @@
 ;; Custom lisp code
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
+;; javascript
+;; https://github.com/mooz/js2-mode
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 ;; packages
 (require 'package)
 (add-to-list 'package-archives
@@ -84,7 +89,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("7fe1e3de3e04afc43f9a3d3a8d38cd0a0efd9d4c" "d14db41612953d22506af16ef7a23c4d112150e5" default))))
+ '(custom-safe-themes (quote ("7fe1e3de3e04afc43f9a3d3a8d38cd0a0efd9d4c" "d14db41612953d22506af16ef7a23c4d112150e5" default)))
+ '(js2-basic-offset 2))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
