@@ -12,27 +12,40 @@
 ;; Keyboard and Unicode stuff
 (set-keyboard-coding-system 'iso-latin-1)
 
+;; Custom lisp code
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
+;; javascript
+;; https://github.com/mooz/js2-mode
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 ;; packages
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
 (package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(starter-kit
-                      starter-kit-eshell
-                      starter-kit-bindings
-                      starter-kit-lisp
-                      undo-tree
-                      js2-mode
-                      clojure-mode
-                      ac-slime          
-;                      slime-fuzzy
-                      rainbow-delimiters
-                      yasnippet
-                      yasnippet-bundle))
+(defvar my-packages
+  '(
+    ac-slime          
+    ace-jump-mode
+    clojure-mode
+    monokai-theme
+    rainbow-delimiters
+    starter-kit
+    starter-kit-bindings
+    starter-kit-eshell
+    starter-kit-lisp
+    undo-tree
+    yasnippet
+    yasnippet-bundle
+    ;; slime-fuzzy
+    ))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -40,6 +53,12 @@
 
 ;; modes
 (global-undo-tree-mode 1)
+
+;; yas
+
+(setq yas/root-directory "~/.emacs.d/yas-snippets")
+
+(yas/load-directory yas/root-directory)
 
 ;; org mode
 
@@ -68,24 +87,13 @@
 ;; rainbow-delimiters
 (global-rainbow-delimiters-mode 1)
 
+;; ace-jump
+(require 'ace-jump-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+;; custom stuff
+
 (add-hook 'slime-repl-mode-hook 'paredit-mode)
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("d14db41612953d22506af16ef7a23c4d112150e5" default))))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-(when (package-installed-p 'color-theme-sanityinc-solarized)
-  (load-theme 'sanityinc-solarized-dark))
 
 (defun b6n-on-mark-activated ()
   (setq cursor-type 'bar))
