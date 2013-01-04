@@ -44,6 +44,7 @@
     undo-tree
     yasnippet
     yasnippet-bundle
+    nrepl
     ;; slime-fuzzy
     ))
 
