@@ -109,3 +109,5 @@
 ;; windows
 (when (eq system-type 'windows-nt)
   (setq null-device "/dev/null"))
+
+(remove-hook 'text-mode-hook #'turn-on-auto-fill)
