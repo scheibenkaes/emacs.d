@@ -111,3 +111,13 @@
   (setq null-device "/dev/null"))
 
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
+
+(defun linums-while-goto-line ()
+  "Displays the line numbers and then invokes goto-line"
+  (interactive)
+  (let ((was-on linum-mode))
+    (unless linum-mode
+      (global-linum-mode 1))
+    (call-interactively 'goto-line)
+    (unless was-on
+      (global-linum-mode -1))))
