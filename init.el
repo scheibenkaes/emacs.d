@@ -7,7 +7,7 @@
 
 ;; spelling
 (setq ispell-program-name "aspell")
-; (ispell-change-dictionary "german8")
+(ispell-change-dictionary "en")
 
 ;; Keyboard and Unicode stuff
 (set-keyboard-coding-system 'iso-latin-1)
@@ -31,11 +31,10 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(
-    ac-slime          
+  '(ac-slime
     ace-jump-mode
     clojure-mode
-    monokai-theme
+;;    monokai-theme
     rainbow-delimiters
     starter-kit
     starter-kit-bindings
