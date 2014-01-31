@@ -1,3 +1,6 @@
+;; fonts
+(set-face-attribute 'default nil :height 100)
+
 ;; OS stuff
 (setq x-select-enable-clipboard t)
 
