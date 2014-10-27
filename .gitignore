@@ -1,3 +1,13 @@
 #*#
 .#*
 /#init.el#
+/bookmarks
+/places
+/.smex-items
+/backups/
+/elpa/
+/eshell/
+/auto-save-list/
+/server/
+/tramp
+/url/
