@@ -45,8 +45,6 @@
     undo-tree
     yasnippet
     yasnippet-bundle
-    nrepl
-    ;; slime-fuzzy
     ))
 
 (dolist (p my-packages)
