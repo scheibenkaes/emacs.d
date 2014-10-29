@@ -1,3 +1,6 @@
+;; fonts
+(set-face-attribute 'default nil :height 100)
+
 ;; OS stuff
 (setq x-select-enable-clipboard t)
 
@@ -7,7 +10,7 @@
 
 ;; spelling
 (setq ispell-program-name "aspell")
-; (ispell-change-dictionary "german8")
+(ispell-change-dictionary "en")
 
 ;; Keyboard and Unicode stuff
 (set-keyboard-coding-system 'iso-latin-1)
@@ -32,8 +35,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(
-    ac-slime          
+  '(ac-slime
     ace-jump-mode
     clojure-mode
     warm-night-theme
