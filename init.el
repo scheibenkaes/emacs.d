@@ -15,8 +15,6 @@
 ;; Keyboard and Unicode stuff
 (set-keyboard-coding-system 'iso-latin-1)
 
-;; Custom lisp code
-(add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;; javascript
 ;; https://github.com/mooz/js2-mode
