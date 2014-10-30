@@ -60,6 +60,8 @@
 ;; modes
 (global-undo-tree-mode 1)
 
+(rainbow-delimiters-mode)
+
 ;; yas
 
 (setq yas/root-directory "~/.emacs.d/yas-snippets")
