@@ -84,9 +84,6 @@
 (eval-after-load "auto-complete"
   '(add-to-list 'ac-modes 'slime-repl-mode))
 
-;; rainbow-delimiters
-(global-rainbow-delimiters-mode 1)
-
 ;; ace-jump
 (require 'ace-jump-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
