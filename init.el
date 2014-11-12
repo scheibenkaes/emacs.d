@@ -53,7 +53,7 @@
 
 ;; themes
 
-(load-theme 'warm-night)
+(load-theme 'warm-night t)
 (set-cursor-color "#e67e22")
 
 
