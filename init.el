@@ -116,24 +116,16 @@
 
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
 
-(defun linums-while-goto-line ()
+(defun b6n/linums-while-goto-line ()
   "Displays the line numbers and then invokes goto-line"
   (interactive)
   (let ((was-on linum-mode))
     (unless linum-mode
-      (global-linum-mode 1))
+      (linum-mode 1))
     (call-interactively 'goto-line)
     (unless was-on
-      (global-linum-mode -1))))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("6209442746f8ec6c24c4e4e8a8646b6324594308568f8582907d0f8f0260c3ae" "fe6330ecf168de137bb5eddbf9faae1ec123787b5489c14fa5fa627de1d9f82b" "c3284c1f58b2be08d30bad4780bc052c53e6b06ad5f6ca68d23f3d1a07c8d013" "d921083fbcd13748dd1eb638f66563d564762606f6ea4389ea9328b6f92723b7" "e16a771a13a202ee6e276d06098bc77f008b73bbac4d526f160faa2d76c1dd0e" "21d9280256d9d3cf79cbcf62c3e7f3f243209e6251b215aede5026e0c5ad853f" "68769179097d800e415631967544f8b2001dae07972939446e21438b1010748c" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+      (linum-mode -1))))
+
+(global-set-key (kbd "M-g g") 'b6n/linums-while-goto-line)
+
+
