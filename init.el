@@ -119,12 +119,15 @@
 (defun b6n/linums-while-goto-line ()
   "Displays the line numbers and then invokes goto-line"
   (interactive)
-  (let ((was-on linum-mode))
+  (let ((was-on linum-mode)
+        (inhibit-quit t))
     (unless linum-mode
       (linum-mode 1))
-    (call-interactively 'goto-line)
+    (with-local-quit
+      (call-interactively 'goto-line))
     (unless was-on
-      (linum-mode -1))))
+      (linum-mode -1))
+    (when inhibit-quit (setq quit-flag nil))))
 
 (global-set-key (kbd "M-g g") 'b6n/linums-while-goto-line)
 
