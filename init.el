@@ -60,7 +60,7 @@
 ;; modes
 (global-undo-tree-mode 1)
 
-(rainbow-delimiters-mode)
+(rainbow-delimiters-mode t)
 
 ;; yas
 
