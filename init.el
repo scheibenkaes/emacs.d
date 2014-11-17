@@ -10,7 +10,7 @@
 
 ;; spelling
 (setq ispell-program-name "aspell")
-(ispell-change-dictionary "en")
+(ispell-change-dictionary "english")
 
 ;; Keyboard and Unicode stuff
 (set-keyboard-coding-system 'iso-latin-1)
