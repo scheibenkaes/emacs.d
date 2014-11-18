@@ -1,3 +1,4 @@
+(setq b6n/environment 'work)
 
 (server-start)
 
@@ -5,5 +6,6 @@
 
 (fset 'b6n-yank-last-url
    [?\C-r ?h ?t ?t ?p ?\C-m ?\C-  ?\C-e ?\M-w ?\C-u ?\C-  ?\C-u ?\C- ])
+
 
 

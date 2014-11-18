@@ -1,3 +1,5 @@
+(defvar b6n/environment 'default)
+
 ;; fonts
 (set-face-attribute 'default nil :height 100)
 
