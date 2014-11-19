@@ -118,6 +118,8 @@
 
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
 
+(linum-mode -1)
+
 (defun b6n/linums-while-goto-line ()
   "Displays the line numbers and then invokes goto-line"
   (interactive)
