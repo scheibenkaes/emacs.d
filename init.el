@@ -28,7 +28,7 @@
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://stable.melpa.org/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -38,7 +38,7 @@
   '(ac-slime
     ace-jump-mode
     clojure-mode
-    warm-night-theme
+    flatland-theme
     rainbow-delimiters
     starter-kit
     starter-kit-bindings
@@ -55,7 +55,7 @@
 
 ;; themes
 
-(load-theme 'warm-night t)
+(load-theme 'flatland t)
 (set-cursor-color "#e67e22")
 
 
@@ -65,10 +65,8 @@
 (rainbow-delimiters-mode t)
 
 ;; yas
+(yas-global-mode)
 
-(setq yas/root-directory "~/.emacs.d/yas-snippets")
-
-(yas/load-directory yas/root-directory)
 
 ;; org mode
 
@@ -76,7 +74,7 @@
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 
-(add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "german8")))
+(add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "de_DE-neu")))
 
 ;; auto complete
 ;; http://www.emacswiki.org/emacs/AutoComplete
