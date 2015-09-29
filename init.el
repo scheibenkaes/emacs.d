@@ -57,6 +57,7 @@
   '(auto-complete
     slime
     ac-slime
+    ac-cider
     ace-jump-mode
     clojure-mode
     flatland-theme
