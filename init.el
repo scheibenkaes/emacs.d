@@ -30,8 +30,12 @@
   (warn "No default GIT install found. A new version of git is required for magit")
   (b6n-setup-custom-git-env))
 
-
+;; Global key settings
 (global-set-key (kbd "C-c q") 'join-line)
+(global-set-key (kbd "C-x f") 'ido-find-file)
+
+;; ido
+(ido-everywhere 1)
 
 ;; javascript
 ;; https://github.com/mooz/js2-mode
