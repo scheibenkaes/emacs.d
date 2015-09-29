@@ -18,10 +18,20 @@
 (set-keyboard-coding-system 'iso-latin-1)
 
 ;; Git
-(setenv "GIT_EXEC_PATH" (concat (expand-file-name "~") "/dev/git/"))
-(setq magit-git-executable "~/dev/git/git")
-(global-set-key (kbd "C-c g") 'magit-status)
+(setq b6n-custom-git-install (concat (expand-file-name "~") "/dev/git/"))
 
+(defun b6n-setup-custom-git-env ()
+  (message "Setting up custom git env")
+  (setenv "GIT_EXEC_PATH" (concat (expand-file-name "~") "/dev/git/"))
+  (setq magit-git-executable "~/dev/git/git")
+  (global-set-key (kbd "C-c g") 'magit-status))
+
+(if (not (file-exists-p b6n-custom-git-install))
+  (warn "No default GIT install found. A new version of git is required for magit")
+  (b6n-setup-custom-git-env))
+
+
+(global-set-key (kbd "C-c q") 'join-line)
 
 ;; javascript
 ;; https://github.com/mooz/js2-mode
@@ -63,7 +73,7 @@
 ;; modes
 (global-undo-tree-mode 1)
 
-(rainbow-delimiters-mode t)
+(rainbow-delimiters-mode 1)
 
 ;; yas
 (yas-global-mode)
