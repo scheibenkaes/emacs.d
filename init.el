@@ -62,6 +62,7 @@
     flatland-theme
     rainbow-delimiters
     better-defaults
+    js2-mode
     undo-tree
     yasnippet))
 
