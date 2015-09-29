@@ -71,6 +71,7 @@
     js2-mode
     undo-tree
     smex
+    paredit
     yasnippet))
 
 (dolist (p my-packages)
@@ -113,7 +114,14 @@
 
 ;; custom stuff
 
+;; paredit
 (add-hook 'slime-repl-mode-hook 'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook       'paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook 'paredit-mode)
+(add-hook 'ielm-mode-hook             'paredit-mode)
+(add-hook 'lisp-mode-hook             'paredit-mode)
+(add-hook 'lisp-interaction-mode-hook 'paredit-mode)
+(add-hook 'clojure-mode-hook          'paredit-mode)
 
 (defun b6n-on-mark-activated ()
   (setq cursor-type 'bar))
