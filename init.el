@@ -30,12 +30,17 @@
   (warn "No default GIT install found. A new version of git is required for magit")
   (b6n-setup-custom-git-env))
 
+;; ido
+(ido-mode)
+(ido-everywhere 1)
+
 ;; Global key settings
 (global-set-key (kbd "C-c q") 'join-line)
 (global-set-key (kbd "C-x f") 'ido-find-file)
-
-;; ido
-(ido-everywhere 1)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; javascript
 ;; https://github.com/mooz/js2-mode
@@ -65,6 +70,7 @@
     better-defaults
     js2-mode
     undo-tree
+    smex
     yasnippet))
 
 (dolist (p my-packages)
