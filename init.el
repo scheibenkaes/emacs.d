@@ -17,6 +17,11 @@
 ;; Keyboard and Unicode stuff
 (set-keyboard-coding-system 'iso-latin-1)
 
+;; Git
+(setenv "GIT_EXEC_PATH" (concat (expand-file-name "~") "/dev/git/"))
+(setq magit-git-executable "~/dev/git/git")
+(global-set-key (kbd "C-c g") 'magit-status)
+
 
 ;; javascript
 ;; https://github.com/mooz/js2-mode
@@ -35,26 +40,22 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(ac-slime
+  '(auto-complete
+    slime
+    ac-slime
     ace-jump-mode
     clojure-mode
     flatland-theme
     rainbow-delimiters
-    starter-kit
-    starter-kit-bindings
-    starter-kit-eshell
-    starter-kit-lisp
+    better-defaults
     undo-tree
-    yasnippet
-    yasnippet-bundle
-    ))
+    yasnippet))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
 ;; themes
-
 (load-theme 'flatland t)
 (set-cursor-color "#e67e22")
 
@@ -69,7 +70,6 @@
 
 
 ;; org mode
-
 (setq org-directory "~/org")
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
@@ -77,16 +77,9 @@
 (add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "de_DE-neu")))
 
 ;; auto complete
-;; http://www.emacswiki.org/emacs/AutoComplete
-;; Installation: http://cx4a.org/software/auto-complete/manual.html#Installation
-(add-to-list 'load-path "~/.emacs.d/ac/")
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac/ac-dict")
 (ac-config-default)
 
 ;; ac-slime
-
-(require 'ac-slime)
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 (eval-after-load "auto-complete"
