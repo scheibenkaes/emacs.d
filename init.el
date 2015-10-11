@@ -79,14 +79,12 @@
     (package-install p)))
 
 ;; themes
-(load-theme 'flatland t)
-(set-cursor-color "#e67e22")
-
+(load-theme 'tango-dark t)
 
 ;; modes
 (global-undo-tree-mode 1)
 
-(rainbow-delimiters-mode 1)
+(rainbow-delimiters-mode t)
 
 ;; yas
 (yas-global-mode)
