@@ -67,7 +67,6 @@
     ac-cider
     ace-jump-mode
     clojure-mode
-    flatland-theme
     rainbow-delimiters
     better-defaults
     js2-mode
@@ -82,6 +81,7 @@
 
 ;; themes
 (load-theme 'tango-dark t)
+(blink-cursor-mode nil)
 
 ;; modes
 (global-undo-tree-mode 1)
