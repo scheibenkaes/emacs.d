@@ -73,6 +73,7 @@
     ac-cider
     ace-jump-mode
     clojure-mode
+    color-theme-sanityinc-tomorrow
     rainbow-delimiters
     better-defaults
     js2-mode
@@ -86,8 +87,8 @@
     (package-install p)))
 
 ;; themes
-(load-theme 'tango-dark t)
 (blink-cursor-mode nil)
+(load-theme 'sanityinc-tomorrow-bright t)
 
 ;; modes
 (global-undo-tree-mode 1)
