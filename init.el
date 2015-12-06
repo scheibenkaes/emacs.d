@@ -60,7 +60,7 @@
 ; Ignoring marmalade right now, seems that it's redundant
 ;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("tromey" . "https://tromey.com/elpa/"))
-(add-to-list 'package-archives '("melpa" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
