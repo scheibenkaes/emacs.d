@@ -82,9 +82,18 @@
     paredit
     yasnippet))
 
-(dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
+(defun install-packages-from-list (ps)
+  (dolist (p ps)
+    (when (not (package-installed-p p))
+      (package-install p))))
+
+(install-packages-from-list my-packages)
+
+;; additional packages
+
+(defvar my-additional-packages
+  '(ecukes
+    restclient) "Packages which are not needed on all machines")
 
 ;; themes
 (blink-cursor-mode nil)
