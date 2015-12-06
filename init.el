@@ -93,7 +93,8 @@
 
 (defvar my-additional-packages
   '(ecukes
-    restclient) "Packages which are not needed on all machines")
+    restclient
+    clj-refactor) "Packages which are not needed on all machines")
 
 ;; themes
 (blink-cursor-mode nil)
