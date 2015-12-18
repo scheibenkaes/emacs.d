@@ -72,6 +72,7 @@
     ac-slime
     ac-cider
     ace-jump-mode
+    ace-window
     clojure-mode
     color-theme-sanityinc-tomorrow
     rainbow-delimiters
@@ -128,6 +129,11 @@
 ;; ace-jump
 (require 'ace-jump-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+;; ace-window
+(if (package-installed-p 'ace-window)
+    (global-set-key (kbd "C-x o") 'ace-window)
+  (message "No ace-window using plain old %s" "C-x o"))
 
 ;; custom stuff
 
