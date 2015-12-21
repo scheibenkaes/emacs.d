@@ -93,8 +93,9 @@
 ;; additional packages
 
 (defvar my-additional-packages
-  '(ecukes
+  '(feature-mode
     restclient
+    web-mode
     clj-refactor) "Packages which are not needed on all machines")
 
 ;; themes
