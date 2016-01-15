@@ -80,6 +80,7 @@
     js2-mode
     undo-tree
     smex
+    direx
     paredit
     yasnippet))
 
