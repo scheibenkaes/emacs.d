@@ -61,6 +61,8 @@
 ;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("tromey" . "https://tromey.com/elpa/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -69,8 +71,6 @@
 (defvar my-packages
   '(auto-complete
     slime
-    ac-slime
-    ac-cider
     ace-jump-mode
     ace-window
     clojure-mode
@@ -96,6 +96,7 @@
   '(feature-mode
     restclient
     web-mode
+    company
     clj-refactor) "Packages which are not needed on all machines")
 
 ;; themes
@@ -110,6 +111,9 @@
 ;; yas
 (yas-global-mode)
 
+;; cider
+
+(add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
 ;; org mode
 (setq org-directory "~/org")
@@ -118,14 +122,10 @@
 
 (add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "de_DE-neu")))
 
-;; auto complete
-(ac-config-default)
 
-;; ac-slime
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
-(eval-after-load "auto-complete"
-  '(add-to-list 'ac-modes 'slime-repl-mode))
+
+;; auto complete
+(global-company-mode)
 
 ;; ace-jump
 (require 'ace-jump-mode)
