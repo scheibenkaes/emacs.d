@@ -98,6 +98,7 @@
     restclient
     web-mode
     company
+    synosaurus
     clj-refactor) "Packages which are not needed on all machines")
 
 ;; themes
