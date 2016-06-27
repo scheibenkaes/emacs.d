@@ -104,7 +104,7 @@
 
 ;; themes
 (blink-cursor-mode nil)
-(load-theme 'sanityinc-tomorrow-bright t)
+(load-theme 'sanityinc-tomorrow-day t)
 
 ;; modes
 (global-undo-tree-mode 1)
