@@ -125,6 +125,7 @@
 
 (add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "de_DE-neu")))
 
+(add-hook 'text-mode-hook 'flyspell-mode)
 
 
 ;; auto complete
