@@ -142,6 +142,9 @@
 
 ;; custom stuff
 
+;; lisp stuff
+(add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
+
 ;; paredit
 (add-hook 'slime-repl-mode-hook 'paredit-mode)
 (add-hook 'emacs-lisp-mode-hook       'paredit-mode)
