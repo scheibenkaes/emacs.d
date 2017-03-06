@@ -48,9 +48,9 @@
   :ensure t
   :bind (("C-c g" . magit-status)))
 
-(use-package my-theme
-  :ensure material-theme
-  :config
+(use-package material-theme
+  :ensure t
+  :init
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
   (load-theme 'material t))
