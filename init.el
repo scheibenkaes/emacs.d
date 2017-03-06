@@ -73,6 +73,12 @@
 (use-package restclient
   :ensure t)
 
+(use-package smart-mode-line
+  :ensure t
+  :init
+  (setq sml/no-confirm-load-theme t)
+  (sml/setup))
+
 (use-package smex
   :ensure t
   :bind (("M-x" . smex)
