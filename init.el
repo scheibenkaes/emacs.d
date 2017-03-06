@@ -121,6 +121,13 @@
 
 (defvar b6n/environment 'default)
 
+(setq prettify-symbols-alist
+      '(
+        ("lambda" . ?λ)
+        ("<=" . ?≤)
+        (">=" . ?≥)
+        ))
+(global-prettify-symbols-mode t)
 
 ;; OS stuff
 (setq x-select-enable-clipboard t)
