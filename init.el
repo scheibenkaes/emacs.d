@@ -87,7 +87,10 @@
          ("C-c C-c M-x" . execute-extended-command)))
 
 (use-package synosaurus
-  :ensure t)
+  :ensure t
+  :init
+  (setq synosaurus-backend 'synosaurus-backend-openthesaurus)
+  (setq synosaurus-choose-method 'popup))
 
 (use-package undo-tree
   :ensure t
@@ -198,9 +201,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default)))
- '(synosaurus-backend (quote synosaurus-backend-openthesaurus))
- '(synosaurus-choose-method (quote popup)))
+    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
