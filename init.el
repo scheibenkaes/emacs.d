@@ -42,7 +42,15 @@
   :ensure t)
 
 (use-package js2-mode
-  :ensure t)
+  :ensure t
+  :config
+  (autoload 'js2-mode "js2-mode" nil t)
+  (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+  (setq ))
+
+(use-package json-mode
+  :ensure t
+  :init (setq json-reformat:indent-width 2))
 
 (use-package magit
   :ensure t
@@ -157,12 +165,6 @@
 (global-set-key (kbd "C-x <down>") 'windmove-down)
 (global-set-key (kbd "C-x <right>") 'windmove-right)
 (global-set-key (kbd "C-x <left>") 'windmove-left)
-
-
-;; javascript
-;; https://github.com/mooz/js2-mode
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 
 
