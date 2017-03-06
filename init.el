@@ -79,6 +79,11 @@
   :ensure t
   :init (rainbow-delimiters-mode t))
 
+(use-package rainbow-mode
+  :ensure t
+  :config
+  (rainbow-mode))
+
 (use-package restclient
   :ensure t)
 
