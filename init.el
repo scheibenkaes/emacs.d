@@ -36,7 +36,7 @@
 
 (use-package company
   :ensure t
-  :init (global-company-mode))
+  :config (global-company-mode))
 
 (use-package direx
   :ensure t)
@@ -50,14 +50,14 @@
 
 (use-package my-theme
   :ensure material-theme
-  :init
+  :config
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
   (load-theme 'material t))
 
 (use-package paredit
   :ensure t
-  :init
+  :config
   (add-hook 'slime-repl-mode-hook 'paredit-mode)
   (add-hook 'emacs-lisp-mode-hook       'paredit-mode)
   (add-hook 'eval-expression-minibuffer-setup-hook 'paredit-mode)
@@ -77,7 +77,7 @@
 
 (use-package rainbow-delimiters
   :ensure t
-  :init (rainbow-delimiters-mode t))
+  :config (rainbow-delimiters-mode t))
 
 (use-package rainbow-mode
   :ensure t
@@ -89,7 +89,7 @@
 
 (use-package smart-mode-line
   :ensure t
-  :init
+  :config
   (setq sml/no-confirm-load-theme t)
   (sml/setup))
 
@@ -108,14 +108,14 @@
 
 (use-package undo-tree
   :ensure t
-  :init (global-undo-tree-mode 1))
+  :config (global-undo-tree-mode 1))
 
 (use-package web-mode
   :ensure t)
 
 (use-package yasnippet
   :ensure t
-  :init
+  :config
   (yas-global-mode))
 
 
