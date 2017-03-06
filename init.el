@@ -34,9 +34,6 @@
 (use-package clj-refactor
   :ensure t)
 
-(use-package color-theme-sanityinc-tomorrow
-  :ensure t)
-
 (use-package company
   :ensure t
   :init (global-company-mode))
@@ -50,6 +47,13 @@
 (use-package magit
   :ensure t
   :bind (("C-c g" . magit-status)))
+
+(use-package my-theme
+  :ensure material-theme
+  :init
+  (blink-cursor-mode nil)
+  (setq blink-cursor-blinks 2)
+  (load-theme 'material t))
 
 (use-package paredit
   :ensure t
@@ -130,9 +134,6 @@
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
-;; themes
-(blink-cursor-mode nil)
-(load-theme 'sanityinc-tomorrow-day t)
 
 
 ;; org mode
