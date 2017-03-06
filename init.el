@@ -3,7 +3,7 @@
 (require 'package)
 
 ;(add-to-list 'package-archives '("tromey" . "https://tromey.com/elpa/"))
-;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
