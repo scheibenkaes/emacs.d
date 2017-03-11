@@ -83,7 +83,9 @@
   (add-hook 'clojure-mode-hook          'paredit-mode))
 
 (use-package projectile
-  :ensure t)
+  :ensure t
+  :config
+  (projectile-mode))
 
 (use-package dashboard
   :ensure t
