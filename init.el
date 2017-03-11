@@ -71,6 +71,9 @@
          ("\\.markdown\\'" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
 
+(use-package multi-term
+  :ensure t)
+
 (use-package paredit
   :ensure t
   :config
