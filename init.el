@@ -32,7 +32,9 @@
   :ensure t)
 
 (use-package clj-refactor
-  :ensure t)
+  :ensure t
+  :init (add-hook 'clojure-mode-hook (lambda ()
+                                       (clj-refactor-mode 1))))
 
 (use-package company
   :ensure t
