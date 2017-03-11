@@ -142,6 +142,7 @@
 (setq prettify-symbols-alist
       '(
         ("lambda" . ?λ)
+        ("fn" . ?λ)
         ("<=" . ?≤)
         (">=" . ?≥)
         ))
