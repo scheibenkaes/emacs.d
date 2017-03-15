@@ -45,10 +45,7 @@
 
 (use-package js2-mode
   :ensure t
-  :config
-  (autoload 'js2-mode "js2-mode" nil t)
-  (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-  (setq ))
+  )
 
 (use-package json-mode
   :ensure t
