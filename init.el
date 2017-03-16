@@ -19,6 +19,12 @@
   :ensure t
   :bind (("C-x o" . ace-window)))
 
+(use-package beacon
+  :ensure t
+  :diminish beacon-mode
+  :config
+  (beacon-mode 1))
+
 (use-package better-defaults
   :ensure t)
 
