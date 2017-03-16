@@ -37,6 +37,7 @@
 
 (use-package company
   :ensure t
+  :bind (("C-c /" . company-complete))
   :config (global-company-mode))
 
 (use-package direx
