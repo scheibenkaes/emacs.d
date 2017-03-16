@@ -84,12 +84,12 @@
   :ensure t
   :bind (("C-c g" . magit-status)))
 
-(use-package material-theme
+(use-package monokai-theme
   :ensure t
-  :init
+  :config
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
-  (load-theme 'material t))
+  (load-theme 'monokai t))
 
 (use-package markdown-mode
   :ensure t
