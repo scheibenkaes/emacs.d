@@ -1,4 +1,3 @@
-
 ;; packages
 (require 'package)
 
@@ -42,6 +41,26 @@
 
 (use-package direx
   :ensure t)
+
+(use-package helm-config
+  :demand
+  :bind-keymap ("C-c h" . helm-command-map))
+
+(use-package helm
+  :ensure t
+  :bind (("M-x" . helm-M-x)
+         ("C-x r b" . helm-filtered-bookmarks)
+         ("C-h a" . helm-apropos)
+         ("C-x C-f" . helm-find-files)
+         ("C-x b" . helm-mini)
+         ("M-y" . helm-show-kill-ring)
+         :map helm-command-map
+         ("o" . helm-occur))
+
+  :config
+  (setq helm-M-x-fuzzy-match t)
+  (setq helm-buffers-fuzzy-matching t
+        helm-recentf-fuzzy-match t))
 
 (use-package js2-mode
   :ensure t
@@ -113,13 +132,6 @@
   (setq sml/no-confirm-load-theme t)
   (sml/setup))
 
-(use-package smex
-  :ensure t
-  :bind (("M-x" . smex)
-         ("M-X" . smex-major-mode-commands)
-         ;; old M-x
-         ("C-c C-c M-x" . execute-extended-command)))
-
 (use-package synosaurus
   :ensure t
   :init
@@ -171,7 +183,6 @@
 
 ;; Global key settings
 (global-set-key (kbd "C-c q") 'join-line)
-(global-set-key (kbd "C-x f") 'ido-find-file)
 (global-set-key (kbd "C-x 4 m") 'bookmark-jump-other-window)
 
 ;; arrow keys
