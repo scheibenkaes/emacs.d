@@ -69,6 +69,9 @@
   (setq helm-buffers-fuzzy-matching t
         helm-recentf-fuzzy-match t))
 
+(use-package helm-projectile
+  :ensure t)
+
 (use-package js2-mode
   :ensure t
   )
