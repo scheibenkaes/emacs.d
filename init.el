@@ -127,7 +127,7 @@
 
 (use-package rainbow-delimiters
   :ensure t
-  :config (rainbow-delimiters-mode t))
+  :config (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
 
 (use-package rainbow-mode
   :ensure t
