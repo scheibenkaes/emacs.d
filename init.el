@@ -56,6 +56,7 @@
 (use-package helm
   :ensure t
   :bind (("M-x" . helm-M-x)
+         ("C-x f" . helm-find-files)
          ("C-x r b" . helm-filtered-bookmarks)
          ("C-h a" . helm-apropos)
          ("C-x C-f" . helm-find-files)
