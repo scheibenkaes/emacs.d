@@ -132,7 +132,7 @@
 (use-package rainbow-mode
   :ensure t
   :config
-  (rainbow-mode))
+  (add-hook 'prog-mode-hook 'rainbow-mode))
 
 (use-package restclient
   :ensure t)
