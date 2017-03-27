@@ -130,7 +130,10 @@
   :ensure t
   :config
   (dashboard-setup-startup-hook)
-  (setq dashboard-startup-banner 'logo))
+  (setq dashboard-startup-banner 'logo)
+  (setq dashboard-items '((recents  . 5)
+                          (bookmarks . 5)
+                          (projects . 5))))
 
 (use-package rainbow-delimiters
   :ensure t
