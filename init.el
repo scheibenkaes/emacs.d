@@ -106,6 +106,7 @@
 (use-package multiple-cursors
   :ensure t
   :bind (("C-c m n" . mc/mark-next-like-this)
+         ("C-c m a" . mc/mark-all-like-this)
          ("C-c m p" . mc/mark-previous-like-this)
          ("C-c m s" . mc/mark-next-symbol-like-this)
          ("C-c m S" . mc/mark-previous-symbol-like-this)))
