@@ -29,7 +29,7 @@
 
 (use-package cider
   :ensure t
-  :init
+  :config
   (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))"))
 
 (use-package clojure-mode
@@ -77,7 +77,7 @@
 
 (use-package json-mode
   :ensure t
-  :init (setq json-reformat:indent-width 2))
+  :config (setq json-reformat:indent-width 2))
 
 (use-package magit
   :ensure t
@@ -96,7 +96,7 @@
   :mode (("README\\.md\\'" . gfm-mode)
          ("\\.md\\'" . markdown-mode)
          ("\\.markdown\\'" . markdown-mode))
-  :init (setq markdown-command "multimarkdown"))
+  :config (setq markdown-command "multimarkdown"))
 
 (use-package multi-term
   :ensure t)
@@ -168,7 +168,7 @@
 
 (use-package synosaurus
   :ensure t
-  :init
+  :config
   (setq synosaurus-backend 'synosaurus-backend-openthesaurus)
   (setq synosaurus-choose-method 'popup))
 
@@ -182,7 +182,7 @@
 
 (use-package yasnippet
   :ensure t
-  :init
+  :config
   (yas-global-mode))
 
 
