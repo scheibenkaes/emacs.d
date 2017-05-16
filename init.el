@@ -139,14 +139,21 @@
   :config
   (projectile-mode))
 
+(defun -goto-dashboard ()
+  "Only display the dashboard"
+  (interactive)
+  (delete-other-windows)
+  (switch-to-buffer "*dashboard*"))
+
 (use-package dashboard
   :ensure t
   :config
   (dashboard-setup-startup-hook)
   (setq dashboard-startup-banner 'logo)
   (setq dashboard-items '((recents  . 5)
-                          (bookmarks . 5)
-                          (projects . 5))))
+                          (bookmarks . 10)
+                          (projects . 10)))
+  :bind (("<f12>" . -goto-dashboard)))
 
 (use-package rainbow-delimiters
   :ensure t
