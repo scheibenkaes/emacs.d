@@ -1,7 +1,6 @@
 ;; packages
 (require 'package)
 
-;(add-to-list 'package-archives '("tromey" . "https://tromey.com/elpa/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
@@ -74,8 +73,7 @@
   :ensure t)
 
 (use-package js2-mode
-  :ensure t
-  )
+  :ensure t)
 
 (use-package json-mode
   :ensure t
@@ -170,20 +168,21 @@
 
 (use-package yasnippet
   :ensure t
-  :config
+  :init
   (yas-global-mode))
 
 
 (defvar b6n/environment 'default)
 
-(setq prettify-symbols-alist
-      '(
-        ("lambda" . ?λ)
+(use-package prettify-symbols
+  :init
+  (global-prettify-symbols-mode t)
+  :config
+  (setq prettify-symbols-alist
+      '(("lambda" . ?λ)
         ("fn" . ?λ)
         ("<=" . ?≤)
-        (">=" . ?≥)
-        ))
-(global-prettify-symbols-mode t)
+        (">=" . ?≥))))
 
 ;; OS stuff
 (setq x-select-enable-clipboard t)
