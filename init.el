@@ -139,11 +139,12 @@
   :config
   (projectile-mode))
 
-(defun -goto-dashboard ()
+(defun goto-dashboard ()
   "Only display the dashboard"
   (interactive)
-  (delete-other-windows)
-  (switch-to-buffer "*dashboard*"))
+  (progn
+    (delete-other-windows)
+    (switch-to-buffer "*dashboard*")))
 
 (use-package dashboard
   :ensure t
@@ -153,7 +154,7 @@
   (setq dashboard-items '((recents  . 5)
                           (bookmarks . 10)
                           (projects . 10)))
-  :bind (("<f12>" . -goto-dashboard)))
+  (global-set-key (kbd "<f12>") 'goto-dashboard))
 
 (use-package rainbow-delimiters
   :ensure t
@@ -195,15 +196,19 @@
 
 (defvar b6n/environment 'default)
 
-(use-package prettify-symbols
-  :init
-  (global-prettify-symbols-mode t)
+(use-package elec-pair
+  :ensure nil
+  :init (electric-pair-mode))
+
+(use-package prog-mode
+  :ensure nil
   :config
   (setq prettify-symbols-alist
-      '(("lambda" . ?λ)
-        ("fn" . ?λ)
-        ("<=" . ?≤)
-        (">=" . ?≥))))
+        '(("lambda" . ?λ)
+          ("fn" . ?λ)
+          ("<=" . ?≤)
+          (">=" . ?≥)))
+  (global-prettify-symbols-mode t))
 
 ;; OS stuff
 (setq x-select-enable-clipboard t)
