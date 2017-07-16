@@ -291,7 +291,11 @@
     (when inhibit-quit (setq quit-flag nil))))
 
 (global-set-key (kbd "M-g g") 'b6n/linums-while-goto-line)
+(global-unset-key (kbd "C-x C-c"))
 
+(defun b6n/exit-emacs ()
+  (interactive)
+  (save-buffers-kill-emacs))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
