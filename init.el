@@ -128,7 +128,10 @@
   :ensure t
   :config
   (require 'smartparens-config)
-  (smartparens-global-strict-mode))
+  (smartparens-global-strict-mode)
+  (global-set-key (kbd "C-<right>") 'sp-forward-slurp-sexp)
+  (global-set-key (kbd "C-<left>")  'sp-forward-barf-sexp)
+  )
 
 (use-package projectile
   :ensure t
