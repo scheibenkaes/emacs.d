@@ -48,6 +48,10 @@
 (use-package direx
   :ensure t)
 
+(use-package expand-region
+  :ensure t
+  :bind (("C-+" . er/expand-region)))
+
 (use-package helm-config
   :demand
   :bind-keymap ("C-c h" . helm-command-map))
