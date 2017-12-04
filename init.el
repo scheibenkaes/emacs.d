@@ -272,7 +272,10 @@
 
 ;; windows
 (when (eq system-type 'windows-nt)
-  (setq null-device "/dev/null"))
+  (setenv "GIT_ASKPASS" "git-gui--askpass")
+  (setq null-device "/dev/null")
+  (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+  (setq ispell-program-name "aspell"))
 
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
 
