@@ -260,6 +260,9 @@
 (ido-mode)
 (ido-everywhere 1)
 
+;; menu
+(menu-bar-mode t)
+
 ;; Global key settings
 (global-set-key (kbd "C-c q") 'join-line)
 (global-set-key (kbd "C-x 4 m") 'bookmark-jump-other-window)
