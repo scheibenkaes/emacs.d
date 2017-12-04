@@ -10,6 +10,8 @@
 (when (not (package-installed-p 'use-package))
   (package-install 'use-package))
 
+(require 'use-package)
+
 (use-package ace-jump-mode
   :ensure t
   :bind (("C-c SPC" . ace-jump-mode)))
