@@ -129,16 +129,15 @@
   :config
   (add-to-list 'company-backends 'company-lua))
 
-(use-package paredit
+
+(use-package smartparens
   :ensure t
   :config
-  (add-hook 'slime-repl-mode-hook 'paredit-mode)
-  (add-hook 'emacs-lisp-mode-hook       'paredit-mode)
-  (add-hook 'eval-expression-minibuffer-setup-hook 'paredit-mode)
-  (add-hook 'ielm-mode-hook             'paredit-mode)
-  (add-hook 'lisp-mode-hook             'paredit-mode)
-  (add-hook 'lisp-interaction-mode-hook 'paredit-mode)
-  (add-hook 'clojure-mode-hook          'paredit-mode))
+  (require 'smartparens-config)
+  (smartparens-global-strict-mode)
+  (global-set-key (kbd "C-<right>") 'sp-forward-slurp-sexp)
+  (global-set-key (kbd "C-<left>")  'sp-forward-barf-sexp)
+  )
 
 (use-package projectile
   :ensure t
@@ -194,6 +193,32 @@
 
 (use-package web-mode
   :ensure t)
+
+(use-package typescript-mode
+  :ensure t)
+
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
+
+(use-package tide
+  :ensure t
+  :config
+  ;; aligns annotation to the right hand side
+  (setq company-tooltip-align-annotations t)
+
+  ;; formats the buffer before saving
+  (add-hook 'before-save-hook 'tide-format-before-save)
+
+  (add-hook 'typescript-mode-hook #'setup-tide-mode))
 
 (use-package yasnippet
   :ensure t
@@ -310,7 +335,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default))))
+    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default)))
+ '(package-selected-packages
+   (quote
+    (smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
