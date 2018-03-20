@@ -14,7 +14,7 @@
 
 (use-package ace-jump-mode
   :ensure t
-  :bind (("C-c SPC" . ace-jump-mode)))
+  :bind (("C-c j" . ace-jump-mode)))
 
 (use-package ace-window
   :ensure t
