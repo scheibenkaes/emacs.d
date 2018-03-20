@@ -129,15 +129,16 @@
   :config
   (add-to-list 'company-backends 'company-lua))
 
-
-(use-package smartparens
+(use-package paredit
   :ensure t
   :config
-  (require 'smartparens-config)
-  (smartparens-global-strict-mode)
-  (global-set-key (kbd "C-<right>") 'sp-forward-slurp-sexp)
-  (global-set-key (kbd "C-<left>")  'sp-forward-barf-sexp)
-  )
+  (add-hook 'slime-repl-mode-hook 'paredit-mode)
+  (add-hook 'emacs-lisp-mode-hook       'paredit-mode)
+  (add-hook 'eval-expression-minibuffer-setup-hook 'paredit-mode)
+  (add-hook 'ielm-mode-hook             'paredit-mode)
+  (add-hook 'lisp-mode-hook             'paredit-mode)
+  (add-hook 'lisp-interaction-mode-hook 'paredit-mode)
+  (add-hook 'clojure-mode-hook          'paredit-mode))
 
 (use-package projectile
   :ensure t
@@ -338,10 +339,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default)))
- '(package-selected-packages
-   (quote
-    (smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
+    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
