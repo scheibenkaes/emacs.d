@@ -89,12 +89,12 @@
   :ensure t
   :bind (("C-c g" . magit-status)))
 
-(use-package monokai-theme
+(use-package solarized-theme
   :ensure t
   :config
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
-  (load-theme 'monokai t))
+  (load-theme 'solarized-light t))
 
 (use-package markdown-mode
   :ensure t
@@ -177,7 +177,7 @@
 (use-package smart-mode-line
   :ensure t
   :config
-  (setq sml/theme 'powerline)
+  (setq sml/theme 'light-powerline)
   (setq sml/no-confirm-load-theme t)
   (sml/setup))
 
