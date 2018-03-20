@@ -312,6 +312,12 @@
 
 (linum-mode -1)
 
+;;; fonts
+;; specify font for all unicode characters
+(when (member "Symbola" (font-family-list))
+  (set-fontset-font t 'unicode "Symbola" nil 'prepend))
+
+
 (defun b6n/linums-while-goto-line ()
   "Displays the line numbers and then invokes goto-line"
   (interactive)
