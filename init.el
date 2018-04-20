@@ -89,12 +89,20 @@
   :ensure t
   :bind (("C-c g" . magit-status)))
 
-(use-package solarized-theme
+
+(use-package spaceline
   :ensure t
   :config
+  (require 'spaceline-config)
+  (spaceline-spacemacs-theme))
+
+(use-package spacemacs-theme
+  :defer t
+  :init
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
-  (load-theme 'solarized-light t))
+  (load-theme 'spacemacs-light t))
+
 
 (use-package markdown-mode
   :ensure t
@@ -173,13 +181,6 @@
 
 (use-package restclient
   :ensure t)
-
-(use-package smart-mode-line
-  :ensure t
-  :config
-  (setq sml/theme 'light-powerline)
-  (setq sml/no-confirm-load-theme t)
-  (sml/setup))
 
 (use-package synosaurus
   :ensure t
@@ -345,7 +346,11 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default))))
+    ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default)))
+ '(org-agenda-files (quote ("c:/Users/bkn/Desktop/index.org")))
+ '(package-selected-packages
+   (quote
+    (smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
