@@ -90,18 +90,18 @@
   :bind (("C-c g" . magit-status)))
 
 
-(use-package spaceline
-  :ensure t
-  :config
-  (require 'spaceline-config)
-  (spaceline-spacemacs-theme))
-
 (use-package spacemacs-theme
   :defer t
   :init
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
   (load-theme 'spacemacs-light t))
+
+(use-package spaceline
+  :ensure t
+  :config
+  (require 'spaceline-config)
+  (spaceline-spacemacs-theme))
 
 
 (use-package markdown-mode
