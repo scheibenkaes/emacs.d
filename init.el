@@ -92,6 +92,7 @@
 
 (use-package spacemacs-theme
   :defer t
+  :ensure t
   :init
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
@@ -350,7 +351,7 @@
  '(org-agenda-files (quote ("c:/Users/bkn/Desktop/index.org")))
  '(package-selected-packages
    (quote
-    (smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
+    (spacemacs-theme smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
