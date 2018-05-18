@@ -244,6 +244,11 @@
           (">=" . ?≥)))
   (global-prettify-symbols-mode t))
 
+(use-package elpy
+  :ensure nil
+  :config
+  (elpy-enable))
+
 ;; OS stuff
 (setq x-select-enable-clipboard t)
 
