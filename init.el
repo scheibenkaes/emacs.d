@@ -243,6 +243,7 @@
           ("fn" . ?λ)
           ("<=" . ?≤)
           (">=" . ?≥)))
+  (add-hook 'before-save-hook 'whitespace-cleanup)
   (global-prettify-symbols-mode t))
 
 (use-package elpy
