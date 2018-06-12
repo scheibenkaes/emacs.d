@@ -324,6 +324,13 @@
 (when (member "Symbola" (font-family-list))
   (set-fontset-font t 'unicode "Symbola" nil 'prepend))
 
+;; Fira Code
+;; https://github.com/tonsky/FiraCode
+(if (member "Fira Code" (font-family-list))
+    (progn
+      (add-to-list 'default-frame-alist '(font . "Fira Code-10"))
+      (set-face-attribute 'default t :font "Fira Code-10"))
+  (warn "Fira Code not installed on this machine"))
 
 (defun b6n/linums-while-goto-line ()
   "Displays the line numbers and then invokes goto-line"
