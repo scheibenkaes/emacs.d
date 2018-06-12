@@ -228,6 +228,8 @@
   :config
   (yas-global-mode))
 
+(use-package yasnippet-snippets
+  :ensure t)
 
 (defvar b6n/environment 'default)
 
