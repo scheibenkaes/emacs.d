@@ -336,6 +336,13 @@
       (set-face-attribute 'default t :font "Fira Code-10"))
   (warn "Fira Code not installed on this machine"))
 
+(defun b6n/underline ()
+  "Add an underline of = on the next line."
+  (interactive)
+  (let* ((length (current-column)))
+    (newline)
+    (insert-char ?= length)))
+
 (defun b6n/linums-while-goto-line ()
   "Displays the line numbers and then invokes goto-line"
   (interactive)
