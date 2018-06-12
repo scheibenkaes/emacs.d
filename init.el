@@ -282,7 +282,8 @@
 (global-set-key (kbd "C-x <right>") 'windmove-right)
 (global-set-key (kbd "C-x <left>") 'windmove-left)
 
-
+;; dired
+(setq dired-dwim-target t)
 
 ;; org mode
 (setq org-directory "~/org")
