@@ -253,6 +253,9 @@
   :config
   (elpy-enable))
 
+(use-package dash
+  :ensure t)
+
 ;; OS stuff
 (setq x-select-enable-clipboard t)
 
@@ -362,6 +365,24 @@
 (defun b6n/exit-emacs ()
   (interactive)
   (save-buffers-kill-emacs))
+
+(require ‘dash)
+
+(defun b6n/run-in-subdirs (dir)
+  "Run a command (`git pull` for now) for all dirs in a directory given."
+  (interactive "D")
+  (let* ((command "git pull")
+         (dirs (directory-files dir t))
+         (dirs (-filter (lambda (d)
+                          (let ((file-name (file-name-base d)))
+                            (and (file-directory-p d)
+                                 (not (string-prefix-p "." file-name))))) dirs)))
+    (-each dirs
+      (lambda (d)
+        (let ((default-directory d))
+          (message "cd %s" d)
+          (shell-command command))))))
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
