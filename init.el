@@ -392,10 +392,12 @@
  '(custom-safe-themes
    (quote
     ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default)))
+ '(elpy-test-discover-runner-command (quote ("python" "-m" "unittest")))
+ '(markdown-command "marked")
  '(org-agenda-files (quote ("c:/Users/bkn/Desktop/index.org")))
  '(package-selected-packages
    (quote
-    (spacemacs-theme smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
+    (kivy-mode plantuml-mode wiki-summary yasnippet-snippets elpy markdown-preview-mode ansible yaml-mode vagrant ag spacemacs-theme smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
