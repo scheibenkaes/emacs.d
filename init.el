@@ -366,7 +366,7 @@
   (interactive)
   (save-buffers-kill-emacs))
 
-(require ‘dash)
+(require 'dash)
 
 (defun b6n/run-in-subdirs (dir)
   "Run a command (`git pull` for now) for all dirs in a directory given."
