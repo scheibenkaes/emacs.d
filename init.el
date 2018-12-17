@@ -45,6 +45,11 @@
 (use-package direx
   :ensure t)
 
+(use-package elfeed
+  :ensure t
+  :bind (("C-c f" . elfeed))
+  :config (elfeed-load-opml "ffeeds.opml"))
+
 (use-package expand-region
   :ensure t
   :bind (("C-+" . er/expand-region)))

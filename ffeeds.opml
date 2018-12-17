@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<opml version="1.0"><head><title>Dynamische Lesezeichen von Firefox</title></head><body>
+<outline type="rss" title="Endless Parentheses" text="Endless Parentheses" xmlUrl="http://endlessparentheses.com/atom.xml" htmlUrl="http://endlessparentheses.com/atom.xml"/>
+<outline type="rss" title="Petri Kainulainen" text="Petri Kainulainen" xmlUrl="https://feeds.feedblitz.com/PetriKainulainen" htmlUrl="https://www.petrikainulainen.net/"/>
+<outline type="rss" title="Pragmatic Emacs" text="Pragmatic Emacs" xmlUrl="http://pragmaticemacs.com/feed/" htmlUrl="http://pragmaticemacs.com/"/>
+<outline type="rss" title="DietDoctor.com" text="DietDoctor.com" xmlUrl="http://www.dietdoctor.com/feed" htmlUrl="https://www.dietdoctor.com/"/>
+<outline type="rss" title="Vimeo / EuroClojure's videos" text="Vimeo / EuroClojure's videos" xmlUrl="http://vimeo.com/euroclojure/videos/rss" htmlUrl="https://vimeo.com/euroclojure/videos"/>
+<outline type="rss" title="Appliness" text="Appliness" xmlUrl="http://www.appliness.com/feed/" htmlUrl="http://www.appliness.com/"/>
+<outline type="rss" title="Full Movies On YouTube" text="Full Movies On YouTube" xmlUrl="http://www.reddit.com/r/fullmoviesonyoutube/.rss" htmlUrl="https://www.reddit.com/r/fullmoviesonyoutube/"/>
+<outline type="rss" title="Chaos Computer Club: Updates" text="Chaos Computer Club: Updates" xmlUrl="http://ccc.de/de/rss/updates.rdf" htmlUrl="http://www.ccc.de/"/>
+<outline type="rss" title="Free Gamer - Open Source Games" text="Free Gamer - Open Source Games" xmlUrl="http://freegamer.blogspot.com/feeds/posts/default" htmlUrl="http://freegamer.blogspot.com/"/>
+<outline type="rss" title="Tech Talk: Activity" text="Tech Talk: Activity" xmlUrl="https://mail.methodpark.de/redmine/projects/tt/activity.atom?key=56263adeff3cde599adf612770f0a093c6ab95a4" htmlUrl="https://mail.methodpark.de/redmine/projects/tt/activity"/>
+<outline type="rss" title="BuzzFeed  - Latest" text="BuzzFeed  - Latest" xmlUrl="http://www.buzzfeed.com/index.xml" htmlUrl="https://www.buzzfeed.com/index"/>
+<outline type="rss" title="The Verge -  All Posts" text="The Verge -  All Posts" xmlUrl="http://www.theverge.com/rss/index.xml" htmlUrl="https://www.theverge.com/"/>
+<outline type="rss" title="Caveman Keto" text="Caveman Keto" xmlUrl="http://cavemanketo.com/feed/" htmlUrl="https://cavemanketo.com/"/>
+<outline type="rss" title="Pipeline Jobs all builds" text="Pipeline Jobs all builds" xmlUrl="http://twdeu079cfcis01:8090/jenkins/rssAll" htmlUrl="http://twdeu079cfcis01:8090/jenkins/"/>
+<outline type="rss" title="F# subreddit" text="F# subreddit" xmlUrl="https://www.reddit.com/r/fsharp/.rss" htmlUrl="https://www.reddit.com/r/fsharp/"/>
+<outline type="rss" title="Planet Debian" text="Planet Debian" xmlUrl="http://planet.debian.org/atom.xml" htmlUrl="https://planet.debian.org/"/>
+<outline type="rss" title="SI System Tests all builds" text="SI System Tests all builds" xmlUrl="http://twdeu079cfcis01:8090/jenkins/job/SI%20System%20Tests/rssAll" htmlUrl="http://twdeu079cfcis01:8090/jenkins/job/SI%20System%20Tests/"/>
+<outline type="rss" title="ConTalks: Where devs talk tech" text="ConTalks: Where devs talk tech" xmlUrl="https://www.reddit.com/r/ConTalks/.rss" htmlUrl="https://www.reddit.com/r/ConTalks/"/>
+<outline type="rss" title="Vimeo / Vimeo Staff Picks" text="Vimeo / Vimeo Staff Picks" xmlUrl="http://vimeo.com/channels/staffpicks/videos/rss" htmlUrl="https://vimeo.com/channels/staffpicks/videos"/>
+<outline type="rss" title="CSS-Tricks" text="CSS-Tricks" xmlUrl="http://feeds.feedburner.com/CssTricks" htmlUrl="https://css-tricks.com/"/>
+<outline type="rss" title="Planet Emacsen" text="Planet Emacsen" xmlUrl="http://planet.emacsen.org/atom.xml" htmlUrl="http://planet.emacsen.org/"/>
+<outline type="rss" title="Jokes: Get Your Funny On!" text="Jokes: Get Your Funny On!" xmlUrl="http://www.reddit.com/r/Jokes/.rss" htmlUrl="https://www.reddit.com/r/Jokes/"/>
+<outline type="rss" title="heise developer neueste Meldungen" text="heise developer neueste Meldungen" xmlUrl="http://www.heise.de/developer/rss/news-atom.xml" htmlUrl="https://www.heise.de/developer/"/>
+<outline type="rss" title="/r/Soccer: the back page of the internet" text="/r/Soccer: the back page of the internet" xmlUrl="http://www.reddit.com/r/soccer/.rss" htmlUrl="https://www.reddit.com/r/soccer/"/>
+<outline type="rss" title="Wait But Why" text="Wait But Why" xmlUrl="http://waitbutwhy.com/feed" htmlUrl="https://waitbutwhy.com/"/>
+<outline type="rss" title="Linux.com - All Content" text="Linux.com - All Content" xmlUrl="https://www.linux.com/feeds/all-content" htmlUrl="https://www.linux.com/feeds/rss"/>
+<outline type="rss" title="German Bundesliga: News &amp; Stories" text="German Bundesliga: News &amp; Stories" xmlUrl="https://www.reddit.com/r/Bundesliga/.rss" htmlUrl="https://www.reddit.com/r/Bundesliga/"/>
+<outline type="rss" title="The Rust programming language" text="The Rust programming language" xmlUrl="http://www.reddit.com/r/rust/.rss" htmlUrl="https://www.reddit.com/r/rust/"/>
+<outline type="rss" title="Techniktagebuch" text="Techniktagebuch" xmlUrl="http://techniktagebuch.tumblr.com/rss" htmlUrl="https://techniktagebuch.tumblr.com/"/>
+<outline type="rss" title="PixelArt!" text="PixelArt!" xmlUrl="http://www.reddit.com/r/PixelArt/.rss" htmlUrl="https://www.reddit.com/r/PixelArt/"/>
+<outline type="rss" title="Heise Open Source" text="Heise Open Source" xmlUrl="http://www.heise.de/open/news/news-atom.xml" htmlUrl="https://www.heise.de/thema/Linux-und-Open-Source?view=atom"/>
+<outline type="rss" title="Explain Like I'm Five | Don't Panic!" text="Explain Like I'm Five | Don't Panic!" xmlUrl="http://www.reddit.com/r/explainlikeimfive/.rss" htmlUrl="https://www.reddit.com/r/explainlikeimfive/"/>
+<outline type="rss" title="funktionale-programmierung.de // Funktionale Programmierung" text="funktionale-programmierung.de // Funktionale Programmierung" xmlUrl="http://funktionale-programmierung.de/rss.xml" htmlUrl="http://funktionale-programmierung.de/"/>
+<outline type="rss" title="gamedev - game development, programming, math, art, collaboration" text="gamedev - game development, programming, math, art, collaboration" xmlUrl="http://www.reddit.com/r/gamedev/.rss" htmlUrl="https://www.reddit.com/r/gamedev/"/>
+<outline type="rss" title="Planet Linux Mint" text="Planet Linux Mint" xmlUrl="http://www.linuxmint.com/planet/atom.xml" htmlUrl="http://www.linuxmint.com/planet/"/>
+<outline type="rss" title="netzpolitik.org" text="netzpolitik.org" xmlUrl="https://netzpolitik.org/feed/" htmlUrl="https://netzpolitik.org/"/>
+<outline type="rss" title="r/Linux" text="r/Linux" xmlUrl="http://www.reddit.com/r/linux/.rss" htmlUrl="https://www.reddit.com/r/linux/"/>
+<outline type="rss" title="everything about keto" text="everything about keto" xmlUrl="http://www.reddit.com/r/keto/.rss" htmlUrl="https://www.reddit.com/r/keto/"/>
+<outline type="rss" title="Der Postillon" text="Der Postillon" xmlUrl="http://feeds.feedburner.com/blogspot/rkEL" htmlUrl="http://www.der-postillon.com/"/>
+<outline type="rss" title="Functional Jobs: All Jobs" text="Functional Jobs: All Jobs" xmlUrl="http://functionaljobs.com/jobs/?format=rss" htmlUrl="https://functionaljobs.com/"/>
+<outline type="rss" title="Today I Learned (TIL)" text="Today I Learned (TIL)" xmlUrl="http://www.reddit.com/r/todayilearned/.rss" htmlUrl="https://www.reddit.com/r/todayilearned/"/>
+<outline type="rss" title="Topthemen / Süddeutsche.de" text="Topthemen / Süddeutsche.de" xmlUrl="http://rssfeed.sueddeutsche.de/c/795/f/449002/index.rss" htmlUrl="http://www.sueddeutsche.de/"/>
+<outline type="rss" title="World News" text="World News" xmlUrl="http://www.reddit.com/r/worldnews/.rss" htmlUrl="https://www.reddit.com/r/worldnews/"/>
+<outline type="rss" title="Life Pro Tips" text="Life Pro Tips" xmlUrl="http://www.reddit.com/r/LifeProTips/.rss" htmlUrl="https://www.reddit.com/r/LifeProTips/"/>
+<outline type="rss" title="sportschau.de" text="sportschau.de" xmlUrl="http://www.sportschau.de/sportschauindex100.feed" htmlUrl="https://www.sportschau.de/sportschauindex100~_type-feed.html"/>
+<outline type="rss" title="The Daily WTF" text="The Daily WTF" xmlUrl="http://syndication.thedailywtf.com/TheDailyWtf" htmlUrl="http://thedailywtf.com/"/>
+<outline type="rss" title="Open Source on Reddit" text="Open Source on Reddit" xmlUrl="http://www.reddit.com/r/opensource/.rss" htmlUrl="https://www.reddit.com/r/opensource/"/>
+<outline type="rss" title="AL JAZEERA ENGLISH (AJE)" text="AL JAZEERA ENGLISH (AJE)" xmlUrl="http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989" htmlUrl="https://www.aljazeera.com/default.html"/>
+<outline type="rss" title="M-x emacs-reddit" text="M-x emacs-reddit" xmlUrl="http://www.reddit.com/r/emacs/.rss" htmlUrl="https://www.reddit.com/r/emacs/"/>
+<outline type="rss" title="Fefes Blog" text="Fefes Blog" xmlUrl="http://blog.fefe.de/rss.xml" htmlUrl="http://blog.fefe.de/"/>
+<outline type="rss" title="Golem.de" text="Golem.de" xmlUrl="http://golem.de.dynamic.feedsportal.com/pf/578068/http://rss.golem.de/rss.php?feed=RSS1.0" htmlUrl="http://feedsportal.com/"/>
+<outline type="rss" title="Clojure" text="Clojure" xmlUrl="http://www.reddit.com/r/Clojure/.rss" htmlUrl="https://www.reddit.com/r/Clojure/"/>
+<outline type="rss" title="Planet Firefox" text="Planet Firefox" xmlUrl="http://planet.firefox.com/atom.xml" htmlUrl="http://planet.firefox.com/"/>
+<outline type="rss" title="RSS-Feed - die neusten Meldungen von STERN.DE" text="RSS-Feed - die neusten Meldungen von STERN.DE" xmlUrl="http://www.stern.de/feed/standard/all/" htmlUrl="https://www.stern.de/?utm_campaign=alle&amp;utm_medium=rss-feed&amp;utm_source=standard"/>
+<outline type="rss" title="heise online News" text="heise online News" xmlUrl="http://www.heise.de/newsticker/heise-atom.xml" htmlUrl="https://www.heise.de/newsticker/"/>
+<outline type="rss" title="Planet Mozilla" text="Planet Mozilla" xmlUrl="http://planet.mozilla.org/atom.xml" htmlUrl="http://planet.mozilla.org/"/>
+<outline type="rss" title="JavaScript" text="JavaScript" xmlUrl="http://www.reddit.com/r/javascript/.rss" htmlUrl="https://www.reddit.com/r/javascript/"/>
+<outline type="rss" title="Planet Clojure" text="Planet Clojure" xmlUrl="http://planet.clojure.in/atom.xml" htmlUrl="http://planet.clojure.in/"/>
+<outline type="rss" title="Alle News aus dem Ressort Erlangen" text="Alle News aus dem Ressort Erlangen" xmlUrl="http://www.nordbayern.de/cmlink/15.423?cid=2.230" htmlUrl="http://www.nordbayern.de/cmlink/15.423?cid=2.230"/>
+<outline type="rss" title="Programmer Humor" text="Programmer Humor" xmlUrl="https://www.reddit.com/r/ProgrammerHumor/.rss" htmlUrl="https://www.reddit.com/r/ProgrammerHumor/"/>
+<outline type="rss" title="Let's Play" text="Let's Play" xmlUrl="http://feeds.feedburner.com/gronkh" htmlUrl="http://gronkh.de/"/>
+<outline type="rss" title="Mozilla Hacks - the Web developer blog" text="Mozilla Hacks - the Web developer blog" xmlUrl="https://hacks.mozilla.org/feed/" htmlUrl="https://hacks.mozilla.org/"/>
+<outline type="rss" title="Nürnberger Nachrichten" text="Nürnberger Nachrichten" xmlUrl="http://www.nordbayern.de/cmlink/15.423?cid=2.242" htmlUrl="http://www.nordbayern.de/cmlink/15.423?cid=2.242"/>
+<outline type="rss" title="programming" text="programming" xmlUrl="http://www.reddit.com/r/programming/.rss" htmlUrl="https://www.reddit.com/r/programming/"/>
+<outline type="rss" title="Hacker News" text="Hacker News" xmlUrl="https://news.ycombinator.com/rss" htmlUrl="https://news.ycombinator.com/"/>
+<outline type="rss" title="Instapaper: Unread" text="Instapaper: Unread" xmlUrl="http://www.instapaper.com/rss/2210902/p6DzI5ncfdXjUZzm9gKcJqOJjg" htmlUrl="https://www.instapaper.com/u"/>
+<outline type="rss" title="reddit: the front page of the internet" text="reddit: the front page of the internet" xmlUrl="http://www.reddit.com/.rss" htmlUrl="https://www.reddit.com/"/>
+<outline type="rss" title="Geekstammtisch" text="Geekstammtisch" xmlUrl="http://geekstammtisch.de/episodes.mp3.rss" htmlUrl="http://geekstammtisch.de/"/>
+<outline type="rss" title="tagesschau.de - Die Nachrichten der ARD" text="tagesschau.de - Die Nachrichten der ARD" xmlUrl="http://www.tagesschau.de/xml/rss2" htmlUrl="http://www.tagesschau.de/"/>
+</body></opml>
