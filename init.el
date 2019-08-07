@@ -152,7 +152,8 @@
 (use-package projectile
   :ensure t
   :config
-  (projectile-mode))
+  (projectile-mode)
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
 
 (defun goto-dashboard ()
   "Only display the dashboard"
