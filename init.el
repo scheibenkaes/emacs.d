@@ -248,11 +248,6 @@
   (add-hook 'before-save-hook 'whitespace-cleanup)
   (global-prettify-symbols-mode t))
 
-(use-package elpy
-  :ensure nil
-  :config
-  (elpy-enable))
-
 (use-package dash
   :ensure t)
 
