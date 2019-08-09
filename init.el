@@ -153,7 +153,8 @@
   :ensure t
   :config
   (projectile-mode)
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (add-to-list 'projectile-globally-ignored-directories "node_modules"))
 
 (defun goto-dashboard ()
   "Only display the dashboard"
@@ -393,7 +394,7 @@
  '(org-agenda-files (quote ("c:/Users/bkn/Desktop/index.org")))
  '(package-selected-packages
    (quote
-    (kivy-mode plantuml-mode wiki-summary yasnippet-snippets elpy markdown-preview-mode ansible yaml-mode vagrant ag spacemacs-theme smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
+    (gitignore-mode docker dockerfile-mode kivy-mode plantuml-mode wiki-summary yasnippet-snippets elpy markdown-preview-mode ansible yaml-mode vagrant ag spacemacs-theme smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
