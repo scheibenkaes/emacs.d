@@ -37,11 +37,6 @@
 (use-package clojure-mode
   :ensure t)
 
-(use-package clj-refactor
-  :ensure t
-  :config (add-hook 'clojure-mode-hook (lambda ()
-                                       (clj-refactor-mode 1))))
-
 (use-package company
   :ensure t
   :bind (("C-c /" . company-complete))
