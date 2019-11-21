@@ -382,6 +382,16 @@
           (message "cd %s" d)
           (shell-command command))))))
 
+(defun b6n/browse-jira-issue ()
+  "Open a URL to the set JIRA instance, reading from point.
+e.g. FOO-123"
+  (interactive)
+  (if (boundp 'b6n-jira-url)
+      (let* ((issue-id (symbol-name (symbol-at-point)))
+             (url (string-join (list (string-remove-suffix "/" b6n-jira-url) issue-id)  "/")))
+        (browse-url url))
+    (message "Variable b6n-jira-url must be set!")))
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
