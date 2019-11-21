@@ -1,3 +1,5 @@
+(prefer-coding-system 'utf-8)
+
 ;; packages
 (require 'package)
 
