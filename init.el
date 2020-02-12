@@ -380,12 +380,12 @@
           (message "cd %s" d)
           (shell-command command))))))
 
-(defun b6n/browse-jira-issue ()
-  "Open a URL to the set JIRA instance, reading from point.
+(defun b6n/browse-jira-issue (issue-id)
+  "Open a URL to the set JIRA instance, reading an issue id or trying from point.
 e.g. FOO-123"
-  (interactive)
+  (interactive "sIssue-ID, or empty for at point: ")
   (if (boundp 'b6n-jira-url)
-      (let* ((issue-id (symbol-name (symbol-at-point)))
+      (let* ((issue-id (or issue-id (symbol-name (symbol-at-point))))
              (url (string-join (list (string-remove-suffix "/" b6n-jira-url) issue-id)  "/")))
         (browse-url url))
     (message "Variable b6n-jira-url must be set!")))
