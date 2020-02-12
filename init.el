@@ -235,8 +235,6 @@
 (use-package yasnippet-snippets
   :ensure t)
 
-(defvar b6n/environment 'default)
-
 (use-package elec-pair
   :ensure nil
   :init (electric-pair-mode))
