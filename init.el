@@ -126,6 +126,10 @@
          ("C-c m s" . mc/mark-next-symbol-like-this)
          ("C-c m S" . mc/mark-previous-symbol-like-this)))
 
+(use-package emojify
+  :ensure t
+  :init (global-emojify-mode))
+
 (defun start-love-game ()
   (interactive)
   (shell-command "love ."))
