@@ -130,6 +130,8 @@
   :ensure t
   :init (global-emojify-mode))
 
+(use-package hydra
+  :ensure t)
 
 (use-package paredit
   :ensure t
@@ -279,9 +281,19 @@
 (setq dired-dwim-target t)
 
 ;; org mode
-(setq org-directory "~/org")
-(setq org-mobile-directory "~/Dropbox/MobileOrg")
-(setq org-mobile-inbox-for-pull "~/org/flagged.org")
+(require 'org)
+
+
+(defhydra hydra-scrum (nil nil)
+  "scrum"
+  ("t" org-todo-list "todos")
+  ("a" org-agenda-list "agenda"))
+
+(global-set-key (kbd "<C-f12>") 'hydra-scrum/body)
+
+
+(add-to-list 'org-agenda-files "c:/Users/bkn/workwork/")
+(add-to-list 'org-agenda-files "c:/Users/bkn/workwork/ifm/")
 
 (add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "de_DE-neu")))
 
@@ -394,7 +406,6 @@ e.g. FOO-123"
     ("97d039a52cfb190f4fd677f02f7d03cf7dbd353e08ac8a0cb991223b135ac4e6" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" default)))
  '(elpy-test-discover-runner-command (quote ("python" "-m" "unittest")))
  '(markdown-command "marked")
- '(org-agenda-files (quote ("c:/Users/bkn/Desktop/index.org")))
  '(package-selected-packages
    (quote
     (gitignore-mode docker dockerfile-mode kivy-mode plantuml-mode wiki-summary yasnippet-snippets elpy markdown-preview-mode ansible yaml-mode vagrant ag spacemacs-theme smartparens web-mode undo-tree synosaurus smart-mode-line-powerline-theme restclient rainbow-mode rainbow-delimiters dashboard company-lua lua-mode multi-term markdown-mode monokai-theme magit json-mode js2-mode helm-projectile use-package helm direx company clj-refactor better-defaults beacon ace-window ace-jump-mode))))
