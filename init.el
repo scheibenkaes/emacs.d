@@ -383,18 +383,19 @@
           (message "cd %s" d)
           (shell-command command))))))
 
-(setq b6n-jira-url nil)
+(defvar b6n-jira-url nil "Set this to change the JIRA instance to be opened.")
 
 (defun b6n/browse-jira-issue (issue-id)
   "Open a URL to the set JIRA instance, reading an issue id or trying from point.
 e.g. FOO-123"
   (interactive "sIssue-ID, or empty for at point: ")
-  (if (stringp 'b6n-jira-url)
-      (let* ((issue-id (or issue-id (symbol-name (symbol-at-point))))
-             (url (string-join (list (string-remove-suffix "/" b6n-jira-url) issue-id)  "/")))
+  (if (symbol-value 'b6n-jira-url)
+      (let* ((issue-id (if (string= "" issue-id)
+                           (symbol-name (symbol-at-point))
+                         issue-id))
+             (url (string-join (list (string-remove-suffix "/" (symbol-value 'b6n-jira-url)) issue-id)  "/")))
         (browse-url url))
     (message "Variable b6n-jira-url must be set!")))
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
