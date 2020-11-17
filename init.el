@@ -298,8 +298,6 @@
 (add-to-list 'org-agenda-files "c:/Users/bkn/workwork/")
 (add-to-list 'org-agenda-files "c:/Users/bkn/workwork/ifm/")
 
-(add-hook 'org-mode-hook (lambda () (ispell-change-dictionary "de_DE-neu")))
-
 (add-hook 'text-mode-hook 'flyspell-mode)
 
 ;; custom stuff
