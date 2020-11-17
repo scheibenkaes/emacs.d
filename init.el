@@ -130,19 +130,6 @@
   :ensure t
   :init (global-emojify-mode))
 
-(defun start-love-game ()
-  (interactive)
-  (shell-command "love ."))
-
-(use-package lua-mode
-  :ensure t
-  :bind (("<f5>" . start-love-game))
-  :mode "\\.lua\\'")
-
-(use-package company-lua
-  :ensure t
-  :config
-  (add-to-list 'company-backends 'company-lua))
 
 (use-package paredit
   :ensure t
