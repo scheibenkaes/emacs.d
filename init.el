@@ -287,7 +287,10 @@
 (defhydra hydra-scrum (nil nil)
   "scrum"
   ("t" org-todo-list "todos")
-  ("a" org-agenda-list "agenda"))
+  ("a" org-agenda-list "agenda")
+  ("<up>" (lambda () (interactive) (insert "👍")) "thumbs up")
+  ("<down>" (lambda () (interactive) (insert "👎")) "thumbs down")
+  ("j" b6n/browse-jira-issue "Browse a JIRA issue"))
 
 (global-set-key (kbd "<C-f12>") 'hydra-scrum/body)
 
