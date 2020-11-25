@@ -92,19 +92,17 @@
   :bind (("C-c g" . magit-status)))
 
 
-(use-package spacemacs-theme
+(use-package zenburn-theme
   :defer t
   :ensure t
   :init
   (blink-cursor-mode nil)
   (setq blink-cursor-blinks 2)
-  (load-theme 'spacemacs-light t))
+  (load-theme 'zenburn t))
 
-(use-package spaceline
+(use-package mood-line
   :ensure t
-  :config
-  (require 'spaceline-config)
-  (spaceline-spacemacs-theme))
+  :init (mood-line-mode))
 
 
 (use-package markdown-mode
