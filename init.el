@@ -300,6 +300,8 @@
 
 ;; custom stuff
 
+(setq calendar-week-start-day 1)
+
 ;; lisp stuff
 (add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
 
