@@ -41,8 +41,7 @@
 
 (use-package company
   :ensure t
-  :bind (("C-c /" . company-complete))
-  :config (global-company-mode))
+  :config (add-hook 'after-init-hook 'global-company-mode))
 
 (use-package direx
   :ensure t)
@@ -50,7 +49,7 @@
 (use-package elfeed
   :ensure t
   :bind (("C-c f" . elfeed))
-  :config (elfeed-load-opml "ffeeds.opml"))
+  :config (elfeed-load-opml "./ffeeds.opml"))
 
 (use-package expand-region
   :ensure t
@@ -286,6 +285,7 @@
   "scrum"
   ("t" org-todo-list "todos")
   ("a" org-agenda-list "agenda")
+  ("T" org-tags-view "tags")
   ("<up>" (lambda () (interactive) (insert "👍")) "thumbs up")
   ("<down>" (lambda () (interactive) (insert "👎")) "thumbs down")
   ("j" b6n/browse-jira-issue "Browse a JIRA issue"))
