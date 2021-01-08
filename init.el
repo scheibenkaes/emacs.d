@@ -243,6 +243,12 @@
 (use-package dash
   :ensure t)
 
+(use-package wrap-region
+  :ensure t
+  :config
+  (wrap-region-add-wrapper "*" "*" nil 'org-mode)
+  (wrap-region-add-wrapper "+" "+" nil 'org-mode))
+
 ;; OS stuff
 (setq x-select-enable-clipboard t)
 
