@@ -306,7 +306,6 @@
 
 
 (add-to-list 'org-agenda-files "c:/Users/bkn/workwork/")
-(add-to-list 'org-agenda-files "c:/Users/bkn/workwork/ifm/")
 
 (add-hook 'text-mode-hook 'flyspell-mode)
 
