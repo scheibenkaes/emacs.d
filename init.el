@@ -404,6 +404,14 @@ e.g. FOO-123"
         (browse-url url))
     (message "Variable b6n-jira-url must be set!")))
 
+(defun b6n/heic-to-png (folder)
+  "Transform all heic files from `folder` to pngs.''"
+  (interactive "D")
+  ;; docker run --entrypoint=mogrify -v c:\Users\bkn\Documents\:/imgs dpokidov/imagemagick  -format png imgs/*.heic
+  (shell-command
+   (format "docker run --entrypoint=mogrify -v %s:/imgs dpokidov/imagemagick -format png imgs/*.heic" folder)))
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
