@@ -181,18 +181,24 @@
   :ensure t
   :config
   (setq synosaurus-backend 'synosaurus-backend-openthesaurus)
-  (setq synosaurus-choose-method 'popup))
+  (setq synosaurus-choose-method 'popup)
+  (add-hook 'org-mode-hook 'synosaurus-mode))
 
 (use-package undo-tree
   :ensure t
   :diminish undo-tree-mode
   :config (global-undo-tree-mode 1))
 
+(use-package neotree
+  :ensure nil
+  :config (global-set-key (kbd "<f8>") 'neotree-toggle))
+
 (use-package web-mode
   :ensure t)
 
+;; TypeScript
 (use-package typescript-mode
-  :ensure t)
+  :ensure nil)
 
 (defun setup-tide-mode ()
   (interactive)
