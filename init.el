@@ -416,6 +416,14 @@ e.g. FOO-123"
   (shell-command
    (format "docker run --entrypoint=mogrify -v %s:/imgs dpokidov/imagemagick -format png imgs/*.heic" folder)))
 
+(defun b6n/delete-obj-and-bin-folders (dir)
+  "Delete all VS subfolders"
+  (interactive "D")
+  (let* ((obj (directory-files-recursively dir "obj$" t))
+         (bin (directory-files-recursively dir "bin$" t)))
+    (-each (append obj bin)
+      (lambda (d)
+        (delete-directory d t)))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
